@@ -208,7 +208,7 @@ button:hover {
 }
 
 .operation--transfer {
-  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  background-image: linear-gradient(to top left, #f0eff5, #f0eff5);
 }
 
 .operation--loan {
