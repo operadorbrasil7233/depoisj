@@ -35,12 +35,9 @@
                     <div class="profile-photo">
                         <img src="images/profile-1.jpg" alt="profile photo">
                     </div>
-                    <h5>Admin</h5>
+                    <h5>Investidor</h5>
                     <span class="material-icons-sharp">expand_more</span>
                 </div>
-                <button id="menu-btn">
-                    <span class="material-icons-sharp">menu</span>
-                </button>
             </div>
         </div>
     </nav>
@@ -100,6 +97,32 @@
     <link rel="stylesheet" href="style.css" />
     <title>Brasil Investimentos</title>
   </head>
+     <section class="formulario">
+            <div class="formulario__container">
+               
+                <h2 class="formulario__titulo-texto"></h2>
+                <p class="formulario__texto">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
+
+                <img src="reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
+                    data-video-botao class="formulario__imagem">
+
+                <div class="formulario__camera" data-camera>
+                    <video width="320" height="240" autoplay data-video></video>
+                    <button class='camera__botao' data-tirar-foto>Tirar foto</button>
+                </div>
+
+                <div class="formulario__mensagem" data-mensagem>
+                    <canvas width="320" height="240" data-video-canvas></canvas>
+                    <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                    <p>Prontinho, imagem capturada!</p>
+
+                    <a href="#" class="formulario__botao formulario__botao--ancora" data-enviar>Quero abrir minha
+                        conta!</a>
+						<script src="camera.js"></script>
+                </div>
+            </div>
+			
+        </section>
 
   <body>
     <nav>
@@ -162,13 +185,13 @@
       </div>
 
       <div class="operation operation--transfer">
-        <h2>Validar Operação</h2>
+        <h2>Realizar transferência</h2>
         <form class="form form--transfer">
           <input type="text" class="form__input form__input--to" />
           <input type="number" class="form__input form__input--amount" />
           <button class="form__btn form__btn--transfer">&rarr;</button>
-          <label class="form__label">Nsu</label>
-          <label class="form__label">Autenticador</label>
+          <label class="form__label">Transferir para</label>
+          <label class="form__label">Valor</label>
         </form>
       </div>
       </div>
@@ -428,10 +451,9 @@
                 <div class="header">
                     <h2>Transações Recentes</h2>
                     <a href="#">Mais <span class="material-icons-sharp purple">chevron_right</span></a>
-		</div>
-    <!-- =============================== END OF ASIDE ===================================-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+                </div
+   
+    <script
     <script src="./main.js"></script>
 </body>
 </html>
