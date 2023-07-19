@@ -1,315 +1,53 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./images/favicon.png">
-    <title>Crypto Dashboard</title>
-
-    <!--MATERIAL ICONS CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
-      rel="stylesheet">
-    <!-- GOOGLE FONTS (POPPINS)-->
+    <title></title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!--STYLESHEET-->
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css"
+        integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/formulario/styles.css">
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <img src="images/logo-viamais-azul.png" class="logo"  id="logo" alt="logo via mais">
-            <div class="search-bar">
-                <span class="material-icons-sharp">search</span>
-                <input type="search" placeholder="Pesquise">
-            </div>
-            <div class="profile-area">
-                <div class="theme-btn">
-                    <span class="material-icons-sharp active">light_mode</span>
-                    <span class="material-icons-sharp">dark_mode</span>
+    </header>
+
+
+        <section class="formulario">
+            <div class="formulario__container">
+                <img src="../img/status-2.png" alt="Etapa dois de três" class="formulario__etapas">
+                <h2 class="formulario__titulo-texto">Reconhecimento facial</h2>
+                <p class="formulario__texto">Clique no quadro abaixo para capturarmos uma imagem sua!</p>
+
+                <img src="../img/reconhecimento.png" alt="Rosto com olhos e um sorriso dentro de um enquadramento"
+                    data-video-botao class="formulario__imagem">
+
+                <div class="formulario__camera" data-camera>
+                    <video width="320" height="240" autoplay data-video></video>
+                    <button class='camera__botao' data-tirar-foto>Tirar foto</button>
                 </div>
-                <div class="profile">
-                    <div class="profile-photo">
-                        <img src="images/profile-1.jpg" alt="profile photo">
-                    </div>
-                    <h5>Investidor</h5>
-                    <span class="material-icons-sharp">expand_more</span>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <!--END OF NAVBAR-->
 
-    <main>
-        <aside>
-            <button id="close-btn">
-                <span class="material-icons-sharp">Fechar</span>
-            </button>
+                <div class="formulario__mensagem" data-mensagem>
+                    <canvas width="320" height="240" data-video-canvas></canvas>
+                    <img src="../img/ícone check.png" alt="Ícone de validação" class="formulario__imagem">
+                    <p>Prontinho, imagem capturada!</p>
 
-            <div class="sidebar">
-                <a href="#" class="active">
-                    <span class="material-icons-sharp">dashboard</span>
-                    <h4>Principal</h4>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">currency_exchange</span>
-                    <h4>Minha Conta</h4>
-                </a>
-                <a href="#">
-                    <span class="material-icons-sharp">message</span>
-                    <h4>Chat</h4>
-            
-                </a>
-            </div>
-            <!-- END OF SIDEBAR -->
-
-            <div class="updates">
-                <span class="material-icons-sharp">update</span>
-                <h4>Updates Available</h4>
-                <p>Security Updates</p>
-                <p>General Updates</p>
-                <a href="#">Update Now</a>
-            </div>
-        </aside>
-        <!------------------------------------------- END OF ASIDE ------------------------------------------->
-        <section class="middle">
-            <div class="header">
-               
-            </div>
-
-            <div class="cards">
-                <div class="card">
-                    <div class="top">
-                        <div class="left">
-                            <img src="images/BTC.png" alt="BTC">
-                            <h2>CDB Pré Brasil Invest</h2>
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <h1>Rendimento = 25,75%</h1>
-                        <div class="chip">
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="left">
-                            <small>Prazo</small>
-                            <h5>12 meses</h5>
-                        </div>
-                        <div class="right">
-                            <div class="Seguro">
-                                <small>Seguro</small>
-                                <h5>Sim</h5>
-                            </div>
-                            <div class="cvv">
-                                <small>Ap Minima</small>
-                                <h5>R$1.000</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--END OF CARD 1-->
-
-                <div class="card">
-                    <div class="top">
-                        <div class="left">
-                            <img src="images/ETH.png" alt="ETH">
-                            <h2>Brasil Invest 2</h2>
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <h1>Rendimento = IPCA + 17,5%</h1>
-                        <div class="chip">
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="left"> 
-                            <small>Prazo</small>
-                            <h5>24 Meses</h5>
-                        </div>
-                        <div class="right">
-                            <div class="expiry">
-                                <small>Seguro</small>
-                                <h5>Sim</h5>
-                            </div>
-                            <div class="cvv">
-                                <small>Ap Minima</small>
-                                <h5>R$1.000</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--END OF CARD 2-->
-
-                <div class="card">
-                    <div class="top">
-                        <div class="left">
-                            <img src="images/BTC.png" alt="BTC">
-                            <h2>Bolsa Própria Brasil Invest</h2>
-                        </div>
-                    </div>
-                    <div class="middle">
-                        <h1>Rendimento = VDA + 32%</h1>
-                        <div class="chip">
-                        </div>
-                    </div>
-                    <div class="bottom">
-                        <div class="left"> 
-                            <small>Prazo</small>
-                            <h5>7 Dias Úteis</h5>
-                            <h5>Vda = valor da aplicação</h5>
-                        </div>
-                        <div class="right">
-                            <div class="expired">
-                                <small>Seguro</small>
-                                <h5>Sim</h5>
-                            </div>
-                            <div class="cvv">
-                                <small>Ap Minima</small>
-                                <h5>R$200,00</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--END OF CARD 3-->
-            </div>
-            <!--END OF CARDS--> 
-            <div class="fast-payment">
-                <h2>Pagamentos Realizados Pela Conta</h2>
-                <div class="badges">
-                    <div class="badge">
-                        <span class="material-icons-sharp">add</span>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-primary"></span>
-                        <div>
-                            <h5>Academia</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-success"></span>
-                        <div>
-                            <h5>Internet</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-primary"></span>
-                        <div>
-                            <h5>Gas</h5>
-                            <h4>R$ 0,00 </h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-primary"></span>
-                        <div>
-                            <h5>Cinema</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-primary"></span>
-                        <div>
-                            <h5>Educação</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-danger"></span>
-                        <div>
-                            <h5>Eletricidade</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-                    <div class="badge">
-                        <span class="bg-success"></span>
-                        <div>
-                            <h5>Fast Food</h5>
-                            <h4>R$ 0,00</h4>
-                        </div>
-                    </div>
-
+                    <a href="#" class="formulario__botao formulario__botao--ancora" data-enviar>Quero abrir minha
+                        conta!</a>
                 </div>
             </div>
-            <!-- END OF FAST PAYMENT-->
-              </div>
-                    <h2>Criptomoeda</h2>
-              </div>
-          <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_c8956"></div>
-  <div class="tradingview-widget-copyright"><a href="https://academy.binance.com/pt/articles/how-to-invest-in-bitcoin-and-cryptocurrencies" rel="noopener nofollow" target="_blank"><span class="blue-text">Para Investir em Criptomoedas Aperte aqui e invista pela corretora BINANCE </span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.widget(
-  {
-  "width": "100%",
-  "height": "300",
-  "symbol": "BINANCE:BTCUSDT",
-  "interval": "D",
-  "timezone": "Etc/UTC",
-  "theme": "light",
-  "style": "3",
-  "locale": "br",
-  "toolbar_bg": "#f1f3f6",
-  "enable_publishing": false,
-  "allow_symbol_change": true,
-  "details": true,
-  "hotlist": true,
-  "calendar": true,
-  "container_id": "tradingview_c8956"
-}
-  );
-  </script>
-</div>
-<!-- TradingView Widget END -->
-            
-              <!----------------------------------------------- END OF INVESTMENTS ------------------------------------------------------------>
-            </div>
-                    <h2>Bolsa de Ações EUA</h2>
-              </div>
-        <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://br.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text"></span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-hotlists.js" async>
-  {
-  "colorTheme": "light",
-  "dateRange": "3M",
-  "exchange": "US",
-  "showChart": true,
-  "locale": "br",
-  "width": "100%",
-  "height": "600",
-  "largeChartUrl": "",
-  "isTransparent": false,
-  "showSymbolLogo": true,
-  "showFloatingTooltip": false,
-  "plotLineColorGrowing": "rgba(41, 98, 255, 1)",
-  "plotLineColorFalling": "rgba(41, 98, 255, 1)",
-  "gridLineColor": "rgba(240, 243, 250, 0)",
-  "scaleFontColor": "rgba(106, 109, 120, 1)",
-  "belowLineFillColorGrowing": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorFalling": "rgba(41, 98, 255, 0.12)",
-  "belowLineFillColorGrowingBottom": "rgba(41, 98, 255, 0)",
-  "belowLineFillColorFallingBottom": "rgba(41, 98, 255, 0)",
-  "symbolActiveColor": "rgba(41, 98, 255, 0.12)"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-            <!----------------------------------------------- END OF INVESTMENTS ------------------------------------------------------------>
+        </section>
 
-            <div class="recent-transactions">
-                <div class="header">
-                    <h2>Transações Recentes</h2>
-                    <a href="#">Mais <span class="material-icons-sharp purple">chevron_right</span></a>
-                </div
-   
-    <script
-    <script src="./main.js"></script>
+    </main>
+
+    <script src="../js/camera.js"></script>
 </body>
+
 </html>
