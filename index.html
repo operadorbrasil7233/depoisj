@@ -1,30 +1,30 @@
-<!DOCTYPEhtml >
-< html  lang =" pt-br " >
-< cabeça >
-    < meta  charset =" UTF-8 " >
-    < meta  http-equiv =" X-UA-Compatible " content =" IE=edge " >
-    < meta  name =" janela de visualização " conteúdo =" largura=largura do dispositivo, escala inicial=1,0 " >
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
     <title>Crypto Dashboard</title>
-    <!--CDN DE ÍCONES DE MATERIAIS -->
-    < link  href =" https://fonts.googleapis.com/icon?family=Material+Icons+Sharp "
-      rel =" folha de estilo " >
-    <!-- FONTES DO GOOGLE (POPPINS)-->
-    < link  rel =" preconnect " href =" https://fonts.googleapis.com " >
-        < link  rel =" preconnect " href =" https://fonts.gstatic.com " crossorigin >
-        < link  href =" https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap " rel =" folha de estilo " >
-    <!--FOLHA DE ESTILO-->
-    < link  rel =" folha de estilo " href =" estilo.css " >
-</ cabeça >
-< corpo >
-    <navegar> _ _
-        < div  classe =" recipiente " >
-            < img  src =" images/logo-viamais-azul.png " class =" logo "   id =" logo " alt =" logo via mais " >
-            < div  class =" barra de pesquisa " >
-                < span  class =" material-icons-sharp " > pesquisar </ span >
-                < input  type =" search " placeholder =" Pesquise " >
-            </div> _ _
-            < div  class =" área do perfil " >
+    <!--MATERIAL ICONS CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+    <!-- GOOGLE FONTS (POPPINS)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!--STYLESHEET-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <img src="images/logo-viamais-azul.png" class="logo"  id="logo" alt="logo via mais">
+            <div class="search-bar">
+                <span class="material-icons-sharp">search</span>
+                <input type="search" placeholder="Pesquise">
+            </div>
+            <div class="profile-area">
                 < div  class =" tema-btn " >
                     < span  class =" material-icons-sharp active " > light_mode </ span >
                     < span  class =" material-icons-sharp " > dark_mode </ span >
@@ -35,7 +35,14 @@
                 </div> _ _
                 < div  class =" perfil " >
                     < div  class =" foto do perfil " >
-@@ -44,38 +48,7 @@ <h5>Investidor</h5>
+                        <img src="images/profile-1.jpg" alt="profile photo">
+                    </div>
+                    <h5>Investidor</h5>
+                    <span class="material-icons-sharp">expand_more</span>
+                     <script src="./main.js"></script>
+                </div>
+            </div>
+        </div>
     </nav> _ _
     <!--FIM DA NAVBAR-->
 
@@ -51,43 +58,137 @@
                     < h4 > Principal </ h4 >
                 </a> _ _
                 < a  href =" # " >
-                    < span  class =" material-icons-sharp " > currency_exchange </span>
-                    < h4 > Minha Conta </ ​​h4 >
-                </a> _ _
-                < a  href =" # " >
-                    < span  class =" material-icons-sharp " > mensagem </ span >
-                    < h4 > Bate-papo </ h4 >
-              < script
-    < script  src =" ./main.js " > </ script >
-                </a> _ _
-            </div> _ _
-            <!-- FIM DA BARRA LATERAL -->
+                    < span  class =" material-icons-sharp " > currency_exchange</span>
+                    <h4>Minha Conta</h4>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">message</span>
+                    <h4>Chat</h4>
+              <script
+    <script src="./main.js"></script>
+                </a>
+            </div>
+            <!-- END OF SIDEBAR -->
 
-            < div  class =" atualizações " >
-                < span  class =" material-icons-sharp " > atualização </ span >
-                < h4 > Atualizações disponíveis </ h4 >
-                < p > Atualizações de segurança </ p >
-                < p > Atualizações Gerais </ p >
-                < a  href =" # " > Atualizar agora </ a >
-            </div> _ _
-        </aparte> _ _
+            <div class="updates">
+                <span class="material-icons-sharp">update</span>
+                <h4>Updates Available</h4>
+                <p>Security Updates</p>
+                <p>General Updates</p>
+                <a href="#">Update Now</a>
+            </div>
+        </aside>
 
-        <!------------------------------------------- FIM DO APARELHO ------------------------------------------------>
-        < seção  classe =" meio " >
-            < div  class =" cabeçalho " >
-@@ -422,11 +395,7 @@ <h2>Bolsa de Ações EUA</h2>
-<!-- Widget TradingView END -->
-            <!--------------------------------------------------- FIM DOS INVESTIMENTOS ------------------------------------------------------------->
-
-            < div  class =" transações recentes " >
-                < div  class =" cabeçalho " >
-                    < h2 > Transações Recentes </ h2 >
-                    < a  href =" # " > Mais < span  class =" material-icons-sharp purple " > chevron_right </ span > </ a >
-                </ div
-
-
-    < script
-    < script  src =" ./main.js " > </ script >
+        <!------------------------------------------- END OF ASIDE ------------------------------------------->
+        <section class="middle">
+            <div class="header">
+               
+            </div>
+       <h2>Conta Principal</h2>
+<html lang="pt-br">
+  <head>
+       <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="icon.png" />
+	
+    <link
+      href="sstyle.css"
+      rel="stylesheet"
+    />
+      
+    <link rel="stylesheet" href="style.css" />
+    <title>Brasil Investimentos</title>
+  </head>
+  <body>
+    <nav>
+      <img src="logo.png" alt="Logo" class="logo btn--show-modal" />
+      <form class="login">
+        <input
+          type="text"
+          placeholder="Nome"
+          class="login__input login__input--user"
+        />
+        <input
+          type="password"
+          placeholder="Senha"
+          maxlength="4"
+          class="login__input login__input--pin"
+        />
+        <button class="login__btn">Login 2</button>
+      </form>
+	  <p class="welcome"></p>
+    </nav>
+	<p class="welcome"></p>
+    <div class="main_preloader">
+      <div class="preloader">
+        <div class="preloader__square"></div>
+        <div class="preloader__square"></div>
+        <div class="preloader__square"></div>
+        <div class="preloader__square"></div>
+      </div>
+      <div class="status text-loading">
+        <span class="status__dot">.</span
+        ><span class="status__dot">.</span><span class="status__dot">.</span>
+      </div>
+    </div>
+    <main class="app">
+      <div class="balance">
+        <div>
+          <p class="balance__label">Extrato</p>
+          <p class="balance__date">
+            Atualizado ás  <span class="date">05/03/2037</span>
+          </p>
+        </div>
+        <p class="balance__value" style="width 80%"; >0000R$</p> 
+      </div>
+      <div class="movements">
+        <div class="movements__row">
+          <div class="movements__type movements__type--deposit">2 deposit</div>
+          <div class="movements__date">3 days ago</div>
+          <div class="movements__value">4 000R$</div>
+        </div>
+        <div class="movements__row">
+          <div class="movements__type movements__type--withdrawal">
+            1 withdrawal
+          </div>
+          <div class="movements__date">24/01/2037</div>
+          <div class="movements__value">-378R$</div>
+        </div>
+      </div>
+        <button class="btn--sort">&downarrow; Reorganizar</button>
+      </div>
+      <div class="operation operation--transfer">
+        <h2>Realizar Autenticação</h2>
+        <form class="form form--transfer">
+          <input type="text" class="form__input form__input--to" />
+          <input type="number" class="form__input form__input--amount" />
+          <button class="form__btn form__btn--transfer">&rarr;</button>
+          <label class="form__label">NSU</label>
+          <label class="form__label">Autenticador</label>
+        </form>
+      </form>
+      </div>
+      
+    </main>
+    <div class="modal">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        <br/>
+	     
+	
+      <ul class="modal__form login--submit">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h2 class="modal__footer"><br /></h3>
+    </div>
+    <div class="overlay"></div>
     <script src="script.js"></script>
   </body>
        <h2>Tela de Investimentos</h2>
